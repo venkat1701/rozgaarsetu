@@ -9,6 +9,13 @@ module.exports = {
       'paragraphfont': 'var(--font-montserrat)'
     },
     extend: {
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         'gradient-light': '#d7e9ff',
         'gradient-medium': '#70a5ff',
