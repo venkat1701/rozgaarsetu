@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  background: linear-gradient(to bottom, #4378ff, #D0E7FF);
+  position: relative;
+  min-height: 100vh;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 1px,
+      transparent 250px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3) 2px,
+      transparent 1px,
+      transparent 250px
+    ),
+    radial-gradient(circle, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.8) 100%);
+  
+  mix-blend-mode: overlay;
+  opacity: 0.3; 
+  z-index: 0;
+}
